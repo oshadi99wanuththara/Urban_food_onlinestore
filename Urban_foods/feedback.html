@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback - Urban Foods</title>
+    <link rel="stylesheet" type="Text/css" href="feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Urban Foods</a>
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact us</a>
+            <a href="feedback.html">Customer Feedback</a>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <div class="feedback-header">
+        <h1>Customer Feedback</h1>
+        <p>We value your feedback! Help us improve our service</p>
+    </div>
+
+    <!-- Main Feedback Container -->
+    <div class="feedback-container">
+        <div class="feedback-info">
+            <h2>Your Opinion Matters</h2>
+            <p>At Urban Foods, we're committed to providing you with the best quality products and service. Your feedback helps us understand what we're doing right and where we can improve.</p>
+            
+            <div class="info-box">
+                <i class="fas fa-check-circle"></i>
+                <h4>Quality Assurance</h4>
+                <p>Help us maintain the highest standards</p>
+            </div>
+            
+            <div class="info-box">
+                <i class="fas fa-comments"></i>
+                <h4>Your Voice</h4>
+                <p>Share your thoughts and suggestions</p>
+            </div>
+            
+            <div class="info-box">
+                <i class="fas fa-star"></i>
+                <h4>Recognition</h4>
+                <p>Top feedback providers get special rewards</p>
+            </div>
+        </div>
+
+        <!-- Feedback Form -->
+        <div class="feedback-form-container">
+            <form class="feedback-form" id="feedbackForm">
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Your Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number (Optional)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                </fieldset>
+
+                <!-- Feedback Details -->
+                <fieldset>
+                    <legend>Feedback Details</legend>
+                    
+                    <div class="form-group">
+                        <label for="feedbackType">Feedback Type *</label>
+                        <select id="feedbackType" name="feedbackType" required>
+                            <option value="">-- Select Feedback Type --</option>
+                            <option value="product">Product Quality</option>
+                            <option value="delivery">Delivery Service</option>
+                            <option value="customer-service">Customer Service</option>
+                            <option value="website">Website Experience</option>
+                            <option value="pricing">Pricing</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Overall Rating *</label>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5" required>
+                            <label for="star5" class="star"><i class="fas fa-star"></i></label>
+
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4" class="star"><i class="fas fa-star"></i></label>
+
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3" class="star"><i class="fas fa-star"></i></label>
+
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2" class="star"><i class="fas fa-star"></i></label>
+
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1" class="star"><i class="fas fa-star"></i></label>
+                        </div>
+                        <span class="rating-text" id="ratingText">Please rate your experience</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback">Your Feedback *</label>
+                        <textarea id="feedback" name="feedback" required placeholder="Please share your feedback, suggestions, or concerns..." rows="8"></textarea>
+                        <span class="character-count" id="charCount">0 / 1000 characters</span>
+                    </div>
+                </fieldset>
+
+
+                <!-- Submit Button -->
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Submit Feedback</button>
+                    <button type="reset" class="btn-reset">Clear Form</button>
+                </div>
+            </form>
+
+            <!-- Success Message -->
+            <div class="success-message" id="successMessage" style="display: none;">
+                <i class="fas fa-check-circle"></i>
+                <h3>Thank You!</h3>
+                <p>Your feedback has been submitted successfully. We appreciate your input!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-container">
+            <!-- Company Info Section -->
+            <div class="footer-section company-info">
+                <div class="footer-logo">
+                    <img src="images/logo.jpg" alt="Urban Foods Logo">
+                </div>
+                <h3>Urban Foods</h3>
+                <p>Fresh, Farm-to-Table Products</p>
+                <p>Your trusted source for locally sourced, high-quality food products. Supporting urban farmers and local artisans.</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-section quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="feedback.html">Customer Feedback</a></li>
+                </ul>
+            </div>
+
+            <!-- Product Categories Section -->
+            <div class="footer-section categories">
+                <h4>Our Products</h4>
+                <ul>
+                    <li>Fresh Vegetables</li>
+                    <li>Organic Fruits</li>
+                    <li>Dairy Products</li>
+                    <li>Baked Goods</li>
+                    <li>Handmade Crafts</li>
+                </ul>
+            </div>
+
+            <!-- Contact Info Section -->
+            <div class="footer-section contact-info">
+                <h4>Contact Information</h4>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+94 375 467 6375</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>urbanfoods@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>No:42, Main Street, Colombo, Sri Lanka</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon-Sat: 8AM-8PM</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media & Copyright -->
+        <div class="footer-bottom">
+            <div class="social-media">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Urban Foods. All rights reserved. | Made with <span class="heart">❤️</span> for fresh, local food.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="feedback.js"></script>
+</body>
+</html>
