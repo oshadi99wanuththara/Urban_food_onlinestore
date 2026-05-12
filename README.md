@@ -17,17 +17,6 @@ UrbanFood is a responsive e-commerce marketplace website developed using HTML, C
 - CSS3
 - JavaScript
 
-## Project Structure
-
-UrbanFood/
-├─ index.html
-├─ css/
-│   style.css
-├─ js/
-│   script.js
-├─ images/
-└─ README.md
-
 ## How to Run the Project
 1. Download or clone the repository
 2. Open the project folder in VS Code
